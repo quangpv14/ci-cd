@@ -7,12 +7,12 @@ class BaseError extends Error {
     Error.captureStackTrace(this);
   }
 }
-
+//add
 class InputDataInvalid extends BaseError {
-  constructor({message, description = message, statusCode = 400}) {
+  constructor({ message, description = message, statusCode = 400 }) {
     super(message, description, statusCode);
   }
 }
 
 
-module.exports = {BaseError, InputDataInvalid};
+module.exports = { BaseError, InputDataInvalid };
